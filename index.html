@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Unneu</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Unneu</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <div  id="dropdown">
+                            <button class="nav__link">Categories</button>
+                            <div class="dropdown-content">
+                                <a href="#featured">Clothing</a>
+                                <a href="#">Garments</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button 
+                <i class='bx bx-moon change-theme' id="theme-button"></i>-->
+                <i class="fa fa-search" style="font-size:16.5px"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+                <i class="fa fa-user" style="font-size:16.5px"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured1.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Jean</h3>
+                    <span class="cart__price">$1050</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured2.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Baggy Jean</h3>
+                    <span class="cart__price">$850</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/featured3.jpg" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Tee</h3>
+                    <span class="cart__price">$980</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">$2880</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="assets/img/1.jpeg" alt="" class="img">
+                    <img src="assets/img/2.webp" alt="" class="img">
+                    <img src="assets/img/3.webp" alt="" class="img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">WE LOVE <br> PRE-LOVED, <br> FOR WOMAN. </h1>
+                    <p class="home__description">
+                        Shop and Sell quality secondhand fashion.
+                    </p>
+
+                    <div class="home__btns">
+                        <button class="button home__button">SHOP</button>
+
+                        <a href="#sell" class="button button--gray button--small">
+                            SELL
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Clothing
+            </h2>
+            <div id="myBtnContainer">
+                <span>Filter:</span>
+                <button class="nav__link active filter" onclick="filterSelection('all')"> Show All</button>
+
+                <div class="filter" id="dropdown">
+                    <button class="nav__link">Availability <i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <button class="btn " onclick="filterSelection('Available')"> Available</button>
+                        <button class="btn" onclick="filterSelection('Not_Available')"> NA</button>
+                    </div>
+                </div>
+
+                <div class="filter" id="dropdown">
+                    <button class="nav__link">Price <i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <button class="btn" onclick="filterSelection('ab1')"> 1000-1500</button>
+                        <button class="btn" onclick="filterSelection('ab2')"> 1500-2000</button>
+                        <button class="btn" onclick="filterSelection('ab3')"> 2000-3000</button>
+                    </div>
+                </div>
+
+                <div class="filter" id="dropdown">
+                    <button class="nav__link">Size <i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <button class="btn" onclick="filterSelection('s')"> Small</button>
+                    <button class="btn" onclick="filterSelection('m')"> Medium</button>
+                    <button class="btn" onclick="filterSelection('l')"> Large</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured__container grid">
+
+                <div class="filterDiv Available ab1 m">
+                    <article class="featured__card">
+                        <span class="featured__tag">Available</span>
+
+                        <img src="assets/img/featured1.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">jean</h3>
+                            <span class="featured__price">1050</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+                </div>
+
+                <div class="filterDiv Not_Available">
+                    <article class="featured__card">
+                        <span class="featured__tag">Not Available</span>
+
+                        <img src="assets/img/featured2.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">baggy jean</h3>
+                            <span class="featured__price">$250</span>
+                        </div>
+
+                        <button class="button featured__button">NOTIFY</button>
+                    </article>
+                </div>
+
+                <div class="filterDiv Available ab2 s">
+                    <article class="featured__card">
+                        <span class="featured__tag">Available</span>
+
+                        <img src="assets/img/featured3.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">tee</h3>
+                            <span class="featured__price">1700</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+                </div>
+
+                <div class="filterDiv Available ab3 l">
+                    <article class="featured__card">
+                        <span class="featured__tag">Available</span>
+
+                        <img src="assets/img/featured4.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Cardigan</h3>
+                            <span class="featured__price">$3000</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+                </div>
+                
+                <div class="filterDiv Not_Available">
+                    <article class="featured__card">
+                        <span class="featured__tag">Not Available</span>
+
+                        <img src="assets/img/featured5.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">jacket</h3>
+                            <span class="featured__price">$890</span>
+                        </div>
+
+                        <button class="button featured__button">NOTIFY</button>
+                    </article>
+                </div>
+
+                <div class="filterDiv Available ab1 m">
+                    <article class="featured__card">
+                        <span class="featured__tag">Available</span>
+
+                        <img src="assets/img/featured6.jpg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">fannel frok</h3>
+                            <span class="featured__price">$1090</span>
+                        </div>
+
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container" id="sell">
+            <div class="story__container grid">
+                <div class="story__data">
+                    
+
+                    <h1 class="story__title">
+                        GOT TOO <br> MANY CLOTHES?
+                    </h1>
+
+                    <p class="story__description">
+                        Clear some space in your wardrobe. Send us your pre-loved clothes to resell.
+                    </p>
+
+                    <a href="./index2.html" class="button button--small">SELL NOW <i class='bx bx-right-arrow-alt'></i></a>
+                </div>
+
+                <div class="story__images">
+                    <div class="story__square"><img src="assets/img/sell_img.jpeg" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Products
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="assets/img/product1.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Garment</h3>
+                    <span class="products__price">$1500</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product2.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Scarf</h3>
+                    <span class="products__price">$1350</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product3.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Merch</h3>
+                    <span class="products__price">$870</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="assets/img/product4.jpg" alt="" class="products__img">
+
+                    <h3 class="products__title">Cap</h3>
+                    <span class="products__price">$650</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+
+Bought a jean from Unneu. Smooth website, fast checkout, prompt delivery. Jean's perfect, high quality. Will return. Highly recommended!
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Lee Doe</span>
+                                    <span class="testimonial__perfil-detail">Coimbotore</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+
+I had a great experience buying a jean from Unneu. Easy website, smooth checkout, fast delivery. The jean was exactly as described, great quality. Will shop there again. Highly recommended!
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Samantha Mey</span>
+                                    <span class="testimonial__perfil-detail">Kolkata</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                I had a great experience buying a jean from Unneu. Easy website, smooth checkout, fast delivery. The jean was exactly as described, great quality. Will shop there again. Highly recommended!
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Raul Zaman</span>
+                                    <span class="testimonial__perfil-detail">Bangalore</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+                <div class="testimonial__images">
+                    <img src="assets/img/client.jpeg" alt="" class="testimonial__img">
+                </div>
+                
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                New Arrivals
+            </h2>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/new1.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Sleeve robe</h3>
+                                <span class="new__price">$980</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/new2.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Frok</h3>
+                                <span class="new__price">$1150</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/new3.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Cardigan</h3>
+                                <span class="new__price">$750</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="assets/img/new4.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Flora jean</h3>
+                                <span class="new__price">$1590</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Get Closer <br> To Us.</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>1234 - Bangolore</li>
+                    <li>HI TECH CITY</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Garments</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Scarf</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Merch</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Unneu. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

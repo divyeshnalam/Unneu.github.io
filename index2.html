@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive watches website - Bedimcode</title>
+</head>
+<body>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Unneu</a>
+            <div class=" nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link">Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__btns">
+                <!-- Theme change button 
+                <i class='bx bx-moon change-theme' id="theme-button"></i>-->
+                <i class="fa fa-search" style="font-size:16.5px"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+                <i class="fa fa-user" style="font-size:16.5px"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home" id="home">
+            <div><h1 class="sale_home">HOW IT WORKS?</h1></div>
+            <div class="image-grid">
+
+                <div class="img_sale"><img src="assets/img/sell1.jpeg" alt=""></div>
+                <div class="img_sale"><img src="assets/img/sell2.jpeg" alt=""></div>
+                <div class="img_sale"><img src="assets/img/sell3.jpeg" alt=""></div>
+                <div class="img_sale"><img src="assets/img/sell4.jpeg" alt=""></div>
+                <div class="img_sale"><img src="assets/img/sell5.jpeg" alt=""></div>
+                <div class="img_sale"><img src="assets/img/sell6.jpeg" alt=""></div>
+              </div>
+                       
+        </section>
+        <section>
+            <div class="sale_home"><h1>READY TO SELL YOUR ITEM ! </h1></div>
+            <div class="sale_tool">
+                <div class="select_sub" id="dropdown">
+                    <h2>Select ITEM</h2>
+                    <button>Select your ITEM  <i class='bx bx-chevron-down'></i></button>
+                    <div class="dropdown-content">
+                        <button class="btn" onclick="filterSelection('s')"> T-Shirt</button>
+                        <button class="btn" onclick="filterSelection('m')"> Pant</button>
+                        <button class="btn" onclick="filterSelection('l')"> Trouser</button>
+                    </div>
+                </div>
+
+                <div class="select_sub" >
+                    <h2>Upload Picture of Your ITEM</h2>
+                        
+                    <form action="/action_page.php">
+                        <input type="file" id="myFile" name="filename"><br>
+                        <input type="file" id="myFile" name="filename"><br>
+                        <input type="file" id="myFile" name="filename"><br>
+                        <input type="file" id="myFile" name="filename"><br>
+                        <input type="submit">
+                    </form>
+                </div>
+                    
+            </div>
+            <div class="sale_tool">
+
+                <div class="select_sub sell_radio">
+                    <h2>Condition</h2>
+                    <form action="/action_page.php">
+                        <p>Any signs of Tear?</p>
+                      <input type="radio" id="html" name="fav_language" value="HTML">
+                      <label for="html">YES</label><br>
+                      <input type="radio" id="css" name="fav_language" value="CSS">
+                      <label for="css">NO</label><br>
+                    </form>
+                </div>
+
+
+                <div class="select_sub">
+                    <h2>Description</h1>
+
+                    <form action="/action_page.php">
+                        <p><label for="w3review">Anything about the product? </label></p>
+                        <textarea id="w3review" name="w3review" rows="8" cols="40"></textarea>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                <div>
+            </div>
+        </section>
+        <div class="sale_home"><h2>WILL NOTIFY YOU ! </h2></div>
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Lee Doe</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Samantha Mey</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                They are the best watches that one acquires, also they are always with the latest 
+                                news and trends, with a very comfortable price and especially with the attention 
+                                you receive, they are always attentive to your questions.
+                            </p>
+                            <h3 class="testimonial__date">March 27. 2021</h3>
+
+                            <div class="testimonial__perfil">
+                                <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Raul Zaman</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+                <div class="testimonial__images">
+                    <img src="assets/img/client.jpeg" alt="" class="testimonial__img">
+                </div>
+            
+            </div>
+        </section>
+    
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Get Closer <br> To Us.</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>1234 - Bangolore</li>
+                    <li>HI TECH CITY</li>
+                    <li>123-456-789</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Garments</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Scarf</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Merch</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">&#169; Unneu. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main2.js"></script>
+</body>
+</html>
